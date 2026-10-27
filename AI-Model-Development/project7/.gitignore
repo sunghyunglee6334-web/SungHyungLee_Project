@@ -1,0 +1,27 @@
+# NDA (2026-10-13 강사님 확인): 원본 김치 사진(이미지)만 Git 금지 · 라벨 TXT · CSV 는 허용
+# ── 사진: 어느 폴더든 금지 ──
+*.jpg
+*.jpeg
+*.png
+*.bmp
+**/이물검출_학습데이터*/images/
+# 프로그램 화면 캡처 (문서용, PM 확인)
+!docs/images/*.png
+
+# ── 데이터: FINAL 라벨 · 장부만 올림 ──
+# RAW 원본 · 작업 중(work_*) · 백업 폴더는 NDA 가 아니라 용량 · 혼동 때문에 제외
+data/*
+!data/final/
+data/final/images/
+
+# ── 보고서: 실행마다 생기는 validation_날짜.csv 는 제외 · 최종본만 ──
+reports/validation_*.csv
+!reports/03_validation_final.csv
+
+# ── 용량 · 개인 설정 ──
+*.zip
+settings.json
+*:Zone.Identifier
+__pycache__/
+*.pyc
+.venv/

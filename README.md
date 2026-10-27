@@ -1,6 +1,6 @@
 # SungHyungLee_Project
 
-Sung Hyung Lee — Dev Projects
+AI Engineering Project  |  Sung Hyung Lee
 
 | Project | Description | Role |
 |---|---|---|
